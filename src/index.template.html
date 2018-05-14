@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    {{{meta}}}
+    <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!--<link rel="apple-touch-icon" sizes="120x120" href="/public/logo-120.png">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <link rel="shortcut icon" sizes="48x48" href="/public/favicon.ico">
+    <meta name="theme-color" content="#f60">
+    <meta name="description" content="精武门综合格斗职业联赛官方发布。本赛事以高规格、高水平、高影响力为办赛标准，建立国内首个职业搏击类联赛奖金池。精武门2017-2018赛季通过更优的赛事制度、更强的参赛阵容、更全的传播平台，加速推动中国MMA运动发展，唯热血，不负青春！">
+    <link rel="manifest" href="/manifest.json">
+    <!--百度地图-->
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=7afiGvuZeXBnciPvdfGrxcGDRMpLeoOw" type="text/javascript"></script>
+    <!--<script type=text/javascript src="http://127.0.0.1/dest/vendors.js"></script>-->
+    <!--<script type=text/javascript src="http://127.0.0.1/dest/js/sdk.js"></script>-->
+    <!--<script type=text/javascript src="/sdk/vendors.js"></script>-->
+    <!--<script type=text/javascript src="/sdk/user-auth-sdk.js"></script>-->
+    <script type=text/javascript src="/public/vendors.js"></script>
+    <script type=text/javascript src="/public/sdk.js"></script>
+    <!--百度统计-->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?dba3327e71245bb2e646fe40369ded98";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+      #skip a {  position:absolute;  left:-10000px;  top:auto;  width:1px;  height:1px;  overflow:hidden;  }
+      #skip a:focus {  position:static;  width:auto;  height:auto;  }
+    </style>
+  </head>
+  <body>
+  <div id="skip"><a href="#app">skip to content</a></div>
+  <!--vue-ssr-outlet-->
+  </body>
+</html>
